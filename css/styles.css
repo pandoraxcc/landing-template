@@ -1,0 +1,402 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img, .service-item, .overlay {
+    border-radius: 0 !important;
+  }
+
+  a {
+    color: #0c1834;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+  .title-heading {
+    font-size: 47px!important;
+    margin-bottom: 20px;
+  }
+  
+  /* Site Header */
+  .site-header, .site-footer {
+    background-color: #18233a;
+    padding: 15px 5vw;
+    width: 100%;
+  }
+
+  .image-source {
+    background-color: #18233a;
+    font-size: 1px;
+  }
+  
+  .site-header .container, .site-footer .container {
+    max-width: none;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+  
+  /* Shared Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 180px;
+    width: 100%;
+  }
+  
+  .logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Navigation */
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #e3e4e5;
+  }
+  
+  /* Two-Column Section */
+  .two-column {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 500px;
+    width: 100%;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+    min-height: 500px;
+  }
+  
+  .left-column {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 47px;
+    color: white;
+  }
+  
+  .left-column .content {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .left-column h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-column p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #368dcf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #183d5a;
+  }
+  
+  .right-column {
+    height: auto;
+  }
+  
+  .right-column img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: none;
+  }
+  
+  /* Services Section */
+  .services-section {
+    width: 100%;
+    padding: 50px 5vw;
+    text-align: center;
+    color: #1d1919;
+    background-color: #ffffff;
+  }
+  
+  .services-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .services-header p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .services-columns {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service-item {
+    position: relative;
+    flex: 1 1 calc(32% - 20px);
+    max-width: calc(32% - 20px);
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .service-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 1;
+  }
+
+
+  /* Icon Benefits Section */
+  .icon-benefits {
+  padding: 50px 5vw;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.icon-benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #121212;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-box {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box i {
+  font-size: 3rem;
+  color: #368dcf;
+  margin-bottom: 15px;
+}
+
+.icon-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #121212;
+}
+
+.icon-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Pricing Section */
+.pricing-section {
+  padding: 60px 5vw;
+  background-color: #e9eaeb;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #121212;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 26px 20px;
+  max-width: 320px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0e1524;
+}
+
+.pricing-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #368dcf;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: rgb(22, 18, 18);
+}
+
+.pricing-card .btn {
+  margin-top: 15px;
+}
+
+.pricing-card.recommended {
+  border: 2px solid #368dcf;
+  background-color: #e9f4fc;
+}
+
+.btn {
+  margin: 10px;
+  width: auto;
+}
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding-top: 10px;
+    }
+
+    .logo {
+      padding-right: 15px;
+    }
+  
+    .two-column {
+      flex-direction: column;
+    }
+  
+    .left-column,
+    .right-column {
+      flex: 1 1 100%;
+      min-height: 300px;
+    }
+  
+    .left-column .content {
+      padding: 20px;
+    }
+  
+    .right-column {
+      height: auto;
+      padding: 0;
+    }
+  
+    .right-column img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 400px;
+      display: block;
+    }
+  
+    .services-columns {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .service-item {
+      max-width: 100%;
+    }
+  }
+  
